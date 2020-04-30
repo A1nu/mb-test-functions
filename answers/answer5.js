@@ -1,8 +1,3 @@
-const mocha = require('mocha');
-const chai = require('chai');
-
-const expect = chai.expect;
-
 //============= Question =============
 /**
  const team = {
@@ -38,6 +33,5 @@ const team2 = {
     } };
 team.teamSummary();
 
-//============= For Testing =============
 exports.team = team;
 exports.team2 = team;

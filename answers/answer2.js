@@ -1,8 +1,3 @@
-const mocha = require('mocha');
-const chai = require('chai');
-
-const expect = chai.expect;
-
 //============= Question =============
 /**
     Write a function to check if a word/phrase/sequence is a palindrome using vanilla JS.
@@ -20,5 +15,4 @@ const isPalindrome = (testString) => {
     return initialString === reverseString;
 }
 
-//============= For Testing =============
 exports.isPalindrome = isPalindrome;

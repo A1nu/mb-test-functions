@@ -4,7 +4,8 @@
   "description": "Test task",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "run": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/A1nu/mb-test-functions#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.1.2"
+    "mocha": "^7.1.2",
+    "node": "^14.0.0"
   }
 }

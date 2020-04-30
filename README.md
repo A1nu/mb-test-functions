@@ -1,7 +1,13 @@
 # mb-test-functions
 Test task
 
-Answers to each questions under answers dir.
+Answers to each question under answers dir.
 
-You can run test with:
+To launch project you need folow next steps:
+1) `npm i`
+2) `npm run`
+
+this will return result for each answer.
+
+You can run test with (`npm i` required):
 `npm run test`

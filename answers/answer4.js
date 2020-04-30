@@ -1,8 +1,3 @@
-const mocha = require('mocha');
-const chai = require('chai');
-
-const expect = chai.expect;
-
 //============= Question =============
 /**
   let productCart = [
@@ -25,23 +20,9 @@ CostOfProduct('ipad') should output 7000
  **/
 
 //============= Answer =============
-
-const productCart = [
-    { productName:'iphone-x',qty:10, price:1000 },
-    { productName:'macbook pro',qty:200, price:2000 },
-    { productName:'iwatch',qty:100, price:550 },
-    { productName:'macbook air',qty:100, price:1000 },
-    { productName:'iphone 8',qty:300, price:700 },
-    { productName:'iphone 7',qty:100, price:550 },
-    { productName:'ipad Retina',qty:20, price:1000 },
-    { productName:'ipad', qty:10, price:700 },
-    { productName:'Magic Mouse',qty:50, price:300 },
-    { productName:'Magic Trackpad',qty:75, price:200 }
-]
-
-const costOfProductForQtyGreaterThan = (amount) => {
+const costOfProductForQtyGreaterThan = (amount, productList) => {
     let totalCost = 0;
-    productCart.forEach(element => {
+    productList.forEach(element => {
         if (element.qty > amount) {
             totalCost = totalCost + element.price * element.qty
         }
@@ -49,14 +30,12 @@ const costOfProductForQtyGreaterThan = (amount) => {
     return totalCost;
 }
 
-const costOfSpecificProduct = (itemName) => {
-    const specificItem = productCart.find(
+const costOfSpecificProduct = (itemName, productList) => {
+    const specificItem = productList.find(
         product => product.productName.toLowerCase() === itemName.toLowerCase()
     );
     return specificItem ? specificItem.price * specificItem.qty : void 0
 }
 
-//============= For Testing =============
-exports.productCart = productCart;
 exports.costOfProductForQtyGreaterThan = costOfProductForQtyGreaterThan;
 exports.costOfSpecificProduct = costOfSpecificProduct;

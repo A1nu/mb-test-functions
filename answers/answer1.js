@@ -21,7 +21,6 @@ const expense = {
 const { type, amount } = expense;
 
 
-//============= For Testing =============
 exports.expense = expense;
 exports.type = type;
 exports.amount = amount;
