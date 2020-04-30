@@ -1,0 +1,23 @@
+{
+  "name": "mb-test-functions",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A1nu/mb-test-functions.git"
+  },
+  "author": "A1nu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A1nu/mb-test-functions/issues"
+  },
+  "homepage": "https://github.com/A1nu/mb-test-functions#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  }
+}
