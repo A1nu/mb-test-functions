@@ -31,7 +31,6 @@ const team2 = {
     teamSummary: function(){
         return this.members.map(function(member) { return `${member} is on team ${this.teamName}`; }.bind(this));
     } };
-team.teamSummary();
 
 exports.team = team;
-exports.team2 = team;
+exports.team2 = team2;

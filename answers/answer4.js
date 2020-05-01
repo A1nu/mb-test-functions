@@ -23,9 +23,7 @@ CostOfProduct('ipad') should output 7000
 const costOfProductForQtyGreaterThan = (amount, productList) => {
     let totalCost = 0;
     productList.forEach(element => {
-        if (element.qty > amount) {
-            totalCost = totalCost + element.price * element.qty
-        }
+        if (element.qty > amount) totalCost = totalCost + element.price * element.qty
     })
     return totalCost;
 }

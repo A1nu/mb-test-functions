@@ -6,13 +6,12 @@
 //============= Answer =============
 
 const isPalindrome = (testString) => {
+    let modifiedTestString = '';
     if (!testString.isNaN) {
-        testString = testString.toString();
+        modifiedTestString = testString.toString();
     }
-    const initialString = testString.replace(/\s/g, '');
-    const reverseString = initialString.split('').reverse().join('');
-
-    return initialString === reverseString;
+    modifiedTestString = modifiedTestString.replace(/\s/g, '');
+    return modifiedTestString === modifiedTestString.split('').reverse().join('');
 }
 
 exports.isPalindrome = isPalindrome;
