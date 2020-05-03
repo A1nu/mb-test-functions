@@ -10,8 +10,6 @@ fruitPresent('apple') should return true fruitPresent('artichoke') should return
 
 
 //============= Answer =============
-const isStringPresentsInArray = (checkValue, array) => {
+export const isStringPresentsInArray = (checkValue, array) => {
     return array.some(value => value.toLowerCase() === checkValue.toLowerCase())
 }
-
-exports.isStringPresentsInArray = isStringPresentsInArray;

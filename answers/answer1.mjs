@@ -13,14 +13,9 @@ Write the above using ES6 conventions
 
 //============= Answer =============
 
-const expense = {
+export const expense = {
     type : 'Business',
     amount: '$50'
 }
 
-const { type, amount } = expense;
-
-
-exports.expense = expense;
-exports.type = type;
-exports.amount = amount;
+export const { type, amount } = expense;

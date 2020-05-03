@@ -1,8 +1,9 @@
-const { expense, amount, type } = require('./answers/answer1');
-const { isPalindrome } = require('./answers/answer2');
-const { isStringPresentsInArray } = require('./answers/answer3');
-const { costOfProductForQtyGreaterThan, costOfSpecificProduct } = require('./answers/answer4');
-const { team, team2 } = require('./answers/answer5');
+import { amount, expense, type } from "./answers/answer1.mjs";
+import { isPalindrome } from "./answers/answer2.mjs";
+import { isStringPresentsInArray } from "./answers/answer3.mjs";
+import { costOfProductForQtyGreaterThan, costOfSpecificProduct } from "./answers/answer4.mjs";
+import { team, team2 } from "./answers/answer5.mjs";
+
 
 console.log('Question 1: object values are accessible.');
 console.log(expense.amount);

@@ -2,10 +2,10 @@
   "name": "mb-test-functions",
   "version": "1.0.0",
   "description": "Test task",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "mocha",
-    "run": "node index.js"
+    "start": "node index.mjs"
   },
   "repository": {
     "type": "git",

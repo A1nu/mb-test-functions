@@ -20,7 +20,7 @@ CostOfProduct('ipad') should output 7000
  **/
 
 //============= Answer =============
-const costOfProductForQtyGreaterThan = (amount, productList) => {
+export const costOfProductForQtyGreaterThan = (amount, productList) => {
     let totalCost = 0;
     productList.forEach(element => {
         if (element.qty > amount) totalCost = totalCost + element.price * element.qty
@@ -28,12 +28,9 @@ const costOfProductForQtyGreaterThan = (amount, productList) => {
     return totalCost;
 }
 
-const costOfSpecificProduct = (itemName, productList) => {
+export const costOfSpecificProduct = (itemName, productList) => {
     const specificItem = productList.find(
         product => product.productName.toLowerCase() === itemName.toLowerCase()
     );
     return specificItem ? specificItem.price * specificItem.qty : void 0
 }
-
-exports.costOfProductForQtyGreaterThan = costOfProductForQtyGreaterThan;
-exports.costOfSpecificProduct = costOfSpecificProduct;

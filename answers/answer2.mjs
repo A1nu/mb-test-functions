@@ -5,7 +5,7 @@
  **/
 //============= Answer =============
 
-const isPalindrome = (testString) => {
+export function isPalindrome(testString) {
     let modifiedTestString = '';
     if (!testString.isNaN) {
         modifiedTestString = testString.toString();
@@ -13,5 +13,3 @@ const isPalindrome = (testString) => {
     modifiedTestString = modifiedTestString.replace(/\s/g, '');
     return modifiedTestString === modifiedTestString.split('').reverse().join('');
 }
-
-exports.isPalindrome = isPalindrome;

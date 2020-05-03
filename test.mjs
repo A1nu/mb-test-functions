@@ -1,14 +1,22 @@
-const mocha = require('mocha');
-const chai = require('chai');
+import mocha from "mocha";
+import chai from "chai";
 
 const expect = chai.expect;
 
-const { expense, type, amount } = require('./answers/answer1');
-const { isStringPresentsInArray } = require("./answers/answer3");
-const { isPalindrome } = require('./answers/answer2');
-const { costOfSpecificProduct } = require("./answers/answer4");
-const { costOfProductForQtyGreaterThan } = require("./answers/answer4");
-const { team, team2} = require("./answers/answer5");
+
+
+import { isPalindrome } from "./answers/answer2.mjs";
+
+
+import { expense, type, amount } from "./answers/answer1.mjs";
+
+import { isStringPresentsInArray } from "./answers/answer3.mjs";
+
+import { costOfProductForQtyGreaterThan, costOfSpecificProduct } from "./answers/answer4.mjs";
+
+
+import { team, team2 } from "./answers/answer5.mjs";
+
 
 describe('Answer 1', () => {
     it('Checks if object parameters are accessible', () => {

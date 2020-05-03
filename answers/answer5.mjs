@@ -17,7 +17,7 @@
     It happens because anonymous function cannot access to scope of it's parent.
     There are several solutions: we can bind this to anonymous function or use arrow function. Because it has access to teams scope
  */
-const team = {
+export const team = {
     members:['Superman','Batman','Wonder Woman'],
     teamName: 'Justice league',
     teamSummary: function() {
@@ -25,12 +25,9 @@ const team = {
     } };
 
 /** This solution will also work but not recommended to use it in fact we have arrow functions **/
-const team2 = {
+export const team2 = {
     members:['Superman','Batman','Wonder Woman'],
     teamName: 'Justice league',
     teamSummary: function(){
         return this.members.map(function(member) { return `${member} is on team ${this.teamName}`; }.bind(this));
     } };
-
-exports.team = team;
-exports.team2 = team2;
