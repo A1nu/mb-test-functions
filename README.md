@@ -5,7 +5,7 @@ Answers to each question under answers dir.
 
 To launch project you need folow next steps:
 1) `npm i`
-2) `npm run`
+2) `npm run start`
 
 this will return result for each answer.
 
