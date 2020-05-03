@@ -5,7 +5,7 @@
  **/
 //============= Answer =============
 
-export function isPalindrome(testString) {
+export const isPalindrome = (testString) => {
     let modifiedTestString = '';
     if (!testString.isNaN) {
         modifiedTestString = testString.toString();
